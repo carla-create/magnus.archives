@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+   font-size:16px;
+}
+img,
+iframe {
+max-width: 100%;
+height: auto;
+/* so that aspect ratio is kept even if height is declared in markup */ 
+border: 0;
+/* this stops a border if the image is inside a link */
+}
+/* This is a CSS comment.
+always comment your work to explain what you're doing */
+body{
+font-family: "IM Fell Great Primer SC", serif;	
+}
+/*
+background color defults
+not that HTML and CSS use Americal spelling (color not colour).*/
+body{
+	background-color:darkgreen;
+}
+header{
+	background-color: seagreen;
+}
+/* note that if we want a number of different elements to have the same style, we just comma separate them */
+header, footer{
+	text-align: center;
+}
+/*TYPOGRAPHY */
+
+.im-fell-great-primer-sc-regular {
+  font-family: "IM Fell Great Primer SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+.playfair-display- {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.roboto-mono- robot{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1{
+	font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+	font-size:50px;
+	colour:#fff; /* white*/
+	text-transform:uppercase;
+	padding-bottom:1em;
+}
+h2{
+font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+	font-size:30px;
+	text-transform: uppercase;
+}
+
+p, li, blockquote{
+	font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+	padding-bottom:1em;
+}
+.item{
+	background-color:mediumseagreen;
+	padding:1%;
+	margin:1%;
+	margin-bottom: 20px;
+	margin-top:20px;
+	border-radius:10px;
+}
+
+/* let's bring the width in a little */
+/* check it out - we're responsive without even trying! */ 
+main {
+/* There's rarely any time you should set an explicit width. Always use max-width wherever possible. */
+	max-width:1000px;
+/* Change the above to width: 1000px and see what happens with responsive */
+	margin-left: auto;
+     margin-right: auto; 
+      }
+/* let's talk about nesting */ 
+.item li{
+	margin-left:25px;
+}
+blockquote{
+	text-transform: uppercase;
+	font-style:italic;
+}
+nav{
+	text-align: center;
+}
+nav li{
+	display:inline-block;
+}
+/* nav li a, or nav a ?? */ 
+nav a{
+	background:#63E382;
+	colour:black;
+	padding:5px;
+	text-decoration:none;
+	border-radius:5px;
+}
+nav a:hover{
+	background:#349440;
+}
+body{
+	background-color:#1E3729;
+	background-image:url("BG3.png");
+	background-repeat: repeat;
+	background-size:cover;
+}
